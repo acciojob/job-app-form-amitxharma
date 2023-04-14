@@ -9,27 +9,29 @@
   <body>
     <form action="#" method="post">
       <label for="name">Name*</label>
-      <input type="text" name="name" required id="name" /><br />
+      <input type="text" name="name" id="name" required /><br />
       <label for="email">Email*</label>
-      <input type="email" name="email" required id="email" /><br />
-      <label for="gen">Gender*:</label><br />
+      <input type="email" name="email" id="email" required /><br />
+      <label for="gender">Gender*:</label><br />
       <label for="male">Male</label>
-      <input type="radio" required name="gender" id="radio" />
+      <input type="radio" name="gender" id="male" required />
       <label for="female">Female</label>
-      <input type="radio" required name="gender" id="radio" /><br />
-      <label for="laptop_brand">Laptop Brand</label>
+      <input type="radio" name="gender" id="female" required /><br />
+      <label for="laptop">Laptop Brand</label>
       <select name="laptop_brand" id="laptop">
-        <option value="">Apple</option>
-        <option value="">Asus</option>
-        <option value="">HP</option></select
+        <option value="Apple">Apple</option>
+        <option value="Asus">Asus</option>
+        <option value="HP">HP</option></select
       ><br />
       <label for="age">Age*</label>
-      <input type="number" name="age" id="age" /><br />
+      <input type="number" name="age" id="age" required /><br />
       <label for="dob">DOB*</label>
-      <input type="date" name="" id="dob" /><br />
-      <label for="pass">Password*</label>
-      <input type="password" name="" id="password" /><br />
-      <input type="submit" name="" id="submit" />
+      <input type="date" name="dob" id="dob" required /><br />
+      <label for="password">Password*</label>
+      <input type="password" name="password" id="password" required /><br />
+      <label for="portfolio">Portfolio URL</label>
+      <input type="url" name="portfolio" id="portfolio" /><br />
+      <input type="submit" name="submit" id="submit" />
     </form>
   </body>
 </html>
